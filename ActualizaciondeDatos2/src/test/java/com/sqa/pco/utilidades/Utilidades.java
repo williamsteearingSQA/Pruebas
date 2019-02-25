@@ -44,7 +44,7 @@ public class Utilidades {
 			driverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-password")));
 			Pom.txtClaveLogin(driver).sendKeys(datos.get("clave"));
 			Pom.btnContinuar(driver).submit();
-			Thread.sleep(2000);
+			Thread.sleep(9000);
 			try {
 				String texto = Pom.lblDatosIncorrectos(driver).getAttribute("innerText");
 				System.out.println(texto);
